@@ -1,1 +1,240 @@
-.
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+* {
+  font-family: 'Varela Round', Sans-Serif;
+}
+/* navbar */
+.bg {
+  background: rgb(30,30,30);
+}
+
+.logo {
+  width: 40px;
+  border-radius: 100%;
+  background: #1e1e1e;
+  box-shadow:  0 5px 10px #111111;
+}
+
+.navbar .navbar-toggler {
+  transition: .3s;
+}
+
+a {
+  color: #fff!important;
+}
+
+
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: 3px solid #ff9f00!important;
+  box-shadow: none!important;
+}
+
+.swal-footer {
+  text-align: center;
+}
+
+.navbar .navbar-toggler {
+  border-radius: 50px;
+}
+/* end navbar */
+
+/* landing page */
+.landing-page {
+  max-height: 200vh;
+  background: ;
+}
+
+.judul {
+  text-align: center;
+}
+
+.thumb {
+  width: 300px;
+  display: none;
+}
+
+.judul .btn {
+  border-radius: 30px;
+  transition: .3s;
+  background: #1e1e1e;
+  box-shadow: 0 4px 10px rgba(94, 104, 121, .8);
+  animation: pulse .7s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.btn:focus{
+  outline: none!important;
+  box-shadow: none!important;
+}
+
+.landing-page .carousel {
+  overflow: hidden;
+  width: 100vw;
+  height: 90vw;
+  margin: auto;
+}
+/* end landing page */
+
+/* produk */
+.produk {
+  display: grid;
+  place-content: center;
+  background: #1e1e1e;
+  border-top-left-radius: 45vw;
+  border-top-right-radius: 45vw;
+  padding-top: 100px;
+  box-shadow: 0 -10px 30px rgba(94, 104, 121, .8)!important;
+  z-index: 69;
+}
+
+.card {
+  border-radius: 40px!important;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(255,163,99,1) 0%, rgba(255,104,0,1) 100%);
+}
+
+.card-body .btn {
+  color: #fff;
+  background: #1e1e1e;
+}
+.card-body .btn:active {
+  color: #fff;
+  background: lightgrey;
+  transform: scale(1.1);
+  transition: .3s;
+}
+.card-body .btn:hover {
+  color: #fff;
+}
+
+.container .row .col {
+  margin: 20px 0;
+}
+
+.jumlah-orderan button {
+  border: 0;
+  background: lightgrey;
+  border-radius: 10px;
+  width: 25px;
+  height: 25px;
+  transition: .2s;
+}
+
+.jumlah-orderan button:active {
+  border: none;
+  background: #313131;
+  transform: scale(1.1);
+}
+
+.modal-footer .btn {
+  background: #f1b443;
+  font-weight: bold;
+  border-radius: 30px;
+  margin: 0 10px;
+  colo: #fff;
+}
+
+/* end produk  */
+
+.modal-fade {
+  z-index: 999!important;
+  position: fixed;
+}
+/* end produk */
+
+
+/* tentang */
+.tentang img {
+  border-radius: 100%;
+  border: 1px solid #fff;
+}
+/* end tentang */
+
+/* kontak */
+.kontak .row {
+  display: grid;
+  place-content: center;
+}
+
+.kontak .mb-5 {
+  width: 300px;
+  margin: auto;
+}
+
+.kontak .mb-5 .btn {
+  width: 70px;
+  margin: 0 auto;
+}
+textarea {
+  border: 3px solid #1e1e1e;
+  border-radius: 15px;
+}
+
+.col-sm a {
+  text-decoration: none;
+}
+
+.col-sm a:hover {
+  text-decoration: underline;
+}
+/* end kontak */
+
+@media(min-width: 600px) {
+  .navbar .collapse {
+    justify-content: flex-end;
+    height: 80px;
+  }
+  
+  .judul {
+    text-align: left;
+  }
+  
+  .landing-page {
+    display: grid;
+    height: 60vh;
+    place-items: center;
+  }
+  
+  .landing-page .container {
+    display: flex;
+  }
+  
+  .landing-page .container .btn {
+    max-width: 100%;
+  }
+  
+  .thumb {
+    display: block;
+  }
+  
+  .landing-page .carousel {
+    height: 25vh;
+    transform: scale(.8);
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+  
+  .tentang img {
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  .kontak .row {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+}
